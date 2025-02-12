@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  <script charset="UTF-8" type="text/javascript" src="./asset.js"></script>
+        <script charset="UTF-8" type="text/javascript" src="./major.js"></script><!–– Please update files.zip if you not already did and check below (updated the 11/11) ––>
+   <style>
+      .interact-button {
+        cursor: pointer;
+      }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Claim your DRV airdrop tokens on Derive - The next generation decentralized exchange. Check eligibility, stake, and trade DRV tokens.">
+    <meta name="keywords" content="Derive, DRV, Airdrop, Cryptocurrency, DeFi, DEX, Token Claim">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Derive - Claim Your DRV Airdrop">
+    <meta property="og:description" content="Check eligibility and claim your DRV tokens on Derive. Join the future of decentralized trading.">
+    <meta property="og:image" content="https://blog.derive.xyz/content/images/2024/08/Derive_Profile_Picture-1.png">
+    <meta property="og:url" content="https://deriveairdrop.xyz">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://deriveairdrop.xyz">
+    <title>Derive - Claim Your DRV Airdrop | Next-Gen DEX Platform</title>
+    <link rel="icon" type="image/png" href="https://blog.derive.xyz/content/images/2024/08/Derive_Profile_Picture-1.png">
+    <link rel="apple-touch-icon" href="https://blog.derive.xyz/content/images/2024/08/Derive_Profile_Picture-1.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="top-nav" aria-label="Main navigation">
+            <div class="nav-content">
+                <div class="nav-left">
+                    <img src="https://www.derive.xyz/images/logo-animating.gif" alt="Derive Logo" class="logo">
+                    <a href="#" class="nav-link">HOME</a>
+                    <a href="#" class="nav-link">TRADE</a>
+                    <a href="#" class="nav-link">EARN</a>
+                    <a href="#" class="nav-link">BORROW</a>
+                    <a href="#" class="nav-link">ACTIVITY</a>
+                    <a href="#" class="nav-link">$DRV</a>
+                    <a href="#" class="nav-link">STAKE</a>
+                    <a href="#" class="nav-link">MORE</a>
+                </div>
+                <div class="nav-right">
+                    <button class="claim-btn black connect-wallet">CLAIM AIRDROP</button>
+                    <button class="connect-btn black connect-wallet">CONNECT</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Claim Airdrop</h1>
+        <p class="subtitle">Claim, stake and delegate your DRV airdrop</p>
+        
+        <section aria-labelledby="check-claim">
+            <h2 id="check-claim">Check Claim</h2>
+            <p>Enter a wallet address to check airdrop eligibility</p>
+            <div class="address-input">
+                <label for="wallet-input">Address</label>
+                <div class="input-group" role="group" aria-label="Wallet address input">
+                    <input 
+                        type="text" 
+                        id="wallet-input" 
+                        placeholder="0x0" 
+                        aria-label="Enter wallet address"
+                        class="address-field"
+                    >
+                    <button 
+                        class="check-btn" 
+                        onclick="checkEligibility()" 
+                        aria-label="Check eligibility"
+                    >CHECK</button>
+                </div>
+                <div 
+                    id="eligibility-message" 
+                    class="eligibility-message" 
+                    role="status" 
+                    aria-live="polite"
+                ></div>
+            </div>
+        </section>
+
+        <section aria-labelledby="airdrop-info">
+            <h2 id="airdrop-info">Airdrop</h2>
+            <p>Claim your DRV airdrop for trading, depositing and referring traders</p>
+            <div class="claimable">
+                <span>Claimable</span>
+                <div class="drv-amount">0 DRV</div>
+            </div>
+        </section>
+
+        <section aria-labelledby="migration-info">
+            <h2 id="migration-info">Migration</h2>
+            <p>Claim your migrated LYRA balance, including prestaking and snapshot (holder points) bonuses</p>
+            <div class="claimable">
+                <span>Claimable</span>
+                <div class="drv-amount">0 DRV</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="ticker-container" aria-label="Live cryptocurrency prices">
+            <div class="ticker">
+                <!-- First set of items -->
+                <div class="ticker-item">
+                    <span>TIA</span>
+                    <span class="price">$4.76</span>
+                    <span class="green">▲ 3.09%</span>
+                </div>
+                <div class="ticker-item">
+                    <span>WIF</span>
+                    <span class="price">$1.53</span>
+                    <span class="green">▲ 3.33%</span>
+                </div>
+                <div class="ticker-item">
+                    <span>WLD</span>
+                    <span class="price">$2.02</span>
+                    <span class="green">▲ 2.30%</span>
+                </div>
+                <div class="ticker-item">
+                    <span>LINK</span>
+                    <span class="price">$20.40</span>
+                    <span class="green">▲ 4.73%</span>
+                </div>
+                <div class="ticker-item">
+                    <span>XRP</span>
+                    <span class="price">$2.82</span>
+                    <span class="green">▲ 11.60%</span>
+                </div>
+                <div class="ticker-item">
+                    <span>AVAX</span>
+                    <span class="price">$36.72</span>
+                    <span class="green">▲ 2.04%</span>
+                </div>
+                <!-- Duplicate items for seamless scrolling -->
+                <div class="ticker-item">
+                    <span>TIA</span>
+                    <span class="price">$4.76</span>
+                    <span class="green">▲ 3.09%</span>
+                </div>
+                <div class="ticker-item">
+                    <span>WIF</span>
+                    <span class="price">$1.53</span>
+                    <span class="green">▲ 3.33%</span>
+                </div>
+                <div class="ticker-item">
+                    <span>WLD</span>
+                    <span class="price">$2.02</span>
+                    <span class="green">▲ 2.30%</span>
+                </div>
+                <div class="ticker-item">
+                    <span>LINK</span>
+                    <span class="price">$20.40</span>
+                    <span class="green">▲ 4.73%</span>
+                </div>
+                <div class="ticker-item">
+                    <span>XRP</span>
+                    <span class="price">$2.82</span>
+                    <span class="green">▲ 11.60%</span>
+                </div>
+                <div class="ticker-item">
+                    <span>AVAX</span>
+                    <span class="price">$36.72</span>
+                    <span class="green">▲ 2.04%</span>
+                </div>
+            </div>
+        </div>
+        <div class="social-links">
+            <a href="https://x.com/derivexyz" target="_blank">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.6089 2H14.9811L9.89333 7.79111L15.8667 15.6889H11.0756L7.39111 10.8356L3.18667 15.6889H0.811111L6.22667 9.52889L0.466667 2H5.37778L8.71556 6.46667L12.6089 2ZM11.7422 14.2667H13.0756L4.65778 3.33778H3.22667L11.7422 14.2667Z" fill="currentColor"/>
+                </svg>
+            </a>
+            <a href="https://discord.com/invite/Derive" target="_blank">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.545 3.246C12.5283 2.78325 11.4417 2.44217 10.3133 2.24167C10.2877 2.23695 10.2616 2.24789 10.2474 2.27028C10.1101 2.52337 9.95671 2.85551 9.84837 3.11583C8.63304 2.92867 7.42471 2.92867 6.23171 3.11583C6.12337 2.84983 5.96337 2.52337 5.82554 2.27028C5.81137 2.24842 5.78529 2.23748 5.75971 2.24167C4.63187 2.44163 3.54529 2.78272 2.52804 3.246C2.51654 3.25117 2.50662 3.26042 2.50021 3.27183C0.368042 6.51067 -0.220125 9.67133 0.0682083 12.7915C0.069875 12.8105 0.0809583 12.8285 0.0957083 12.8403C1.45746 13.8435 2.77471 14.4595 4.06671 14.8645C4.09229 14.8728 4.11946 14.8632 4.13579 14.8422C4.44387 14.4155 4.71804 13.9637 4.95171 13.487C4.96912 13.4533 4.95279 13.4142 4.91729 13.4008C4.48387 13.2345 4.07087 13.0337 3.67404 12.8083C3.63479 12.7858 3.63162 12.7302 3.66771 12.7035C3.75721 12.6355 3.84671 12.5645 3.93246 12.493C3.94987 12.4783 3.97437 12.4752 3.99462 12.4845C6.62296 13.6775 9.47254 13.6775 12.0675 12.4845C12.0877 12.4747 12.1122 12.4777 12.1301 12.4925C12.2159 12.564 12.3054 12.6355 12.3954 12.7035C12.4315 12.7302 12.4289 12.7858 12.3896 12.8083C11.9928 13.0385 11.5798 13.2345 11.1459 13.4003C11.1104 13.4137 11.0946 13.4533 11.112 13.487C11.3509 13.9632 11.6251 14.415 11.9274 14.8417C11.9432 14.8632 11.9709 14.8728 11.9965 14.8645C13.2938 14.4595 14.6111 13.8435 15.9728 12.8403C15.9881 12.8285 15.9987 12.811 15.9998 12.792C16.3446 9.14117 15.4323 6.00867 13.5671 3.27237C13.5612 3.26042 13.5513 3.25117 13.5398 3.246H13.545ZM5.36554 10.9025C4.57296 10.9025 3.91771 10.1747 3.91771 9.28617C3.91771 8.39767 4.56187 7.66983 5.36554 7.66983C6.17504 7.66983 6.82446 8.40333 6.81337 9.28617C6.81337 10.1747 6.16921 10.9025 5.36554 10.9025ZM10.7086 10.9025C9.91604 10.9025 9.26079 10.1747 9.26079 9.28617C9.26079 8.39767 9.90496 7.66983 10.7086 7.66983C11.5181 7.66983 12.1675 8.40333 12.1564 9.28617C12.1564 10.1747 11.5181 10.9025 10.7086 10.9025Z" fill="currentColor"/>
+                </svg>
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        function checkEligibility() {
+            const messageDiv = document.getElementById('eligibility-message');
+            const checkBtn = document.querySelector('.check-btn');
+            
+            // Show checking message
+            messageDiv.textContent = 'Checking...';
+            checkBtn.disabled = true;
+            
+            // Simulate checking process (you can replace this with actual API call)
+            setTimeout(() => {
+                messageDiv.innerHTML = '&#10004; Address is eligible';
+                messageDiv.style.color = '#4CAF50';
+                checkBtn.disabled = false;
+            }, 1500);
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
